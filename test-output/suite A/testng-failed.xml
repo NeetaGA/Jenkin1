@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite A]">
+  <listeners>
+    <listener class-name="customReports.customReporter"/>
+  </listeners>
+  <test name="TestA 1(failed)">
+    <classes>
+      <class name="extentreport.TestA_1">
+        <methods>
+          <include name="test_N3"/>
+          <include name="test_N2"/>
+        </methods>
+      </class> <!-- extentreport.TestA_1 -->
+    </classes>
+  </test> <!-- TestA 1(failed) -->
+  <test name="TestA 2(failed)">
+    <classes>
+      <class name="extentreport.TestA_2">
+        <methods>
+          <include name="test_M1"/>
+          <include name="test_M2"/>
+        </methods>
+      </class> <!-- extentreport.TestA_2 -->
+    </classes>
+  </test> <!-- TestA 2(failed) -->
+</suite> <!-- Failed suite [suite A] -->

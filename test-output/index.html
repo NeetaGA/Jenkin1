@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">3 suites, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suite_A">
+              <span class="suite-name border-failed">suite A</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suite_A">
+                    <span>C:\Users\smitasargde\Java\custom reports\Suite_A.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suite_A">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suite_A">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suite_A">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suite_A">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suite_A">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suite_A">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite_A" class="hide-methods failed suite-suite_A"> (hide)</a> <!-- hide-methods failed suite-suite_A -->
+                      <a href="#" panel-name="suite-suite_A" class="show-methods failed suite-suite_A"> (show)</a> <!-- show-methods failed suite-suite_A -->
+                    </span>
+                    <div class="method-list-content failed suite-suite_A">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_A" title="extentreport.TestA_2" hash-for-method="test_M2">test_M2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_A" title="extentreport.TestA_1" hash-for-method="test_N2">test_N2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite_A -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-suite_A" class="hide-methods skipped suite-suite_A"> (hide)</a> <!-- hide-methods skipped suite-suite_A -->
+                      <a href="#" panel-name="suite-suite_A" class="show-methods skipped suite-suite_A"> (show)</a> <!-- show-methods skipped suite-suite_A -->
+                    </span>
+                    <div class="method-list-content skipped suite-suite_A">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_A" title="extentreport.TestA_2" hash-for-method="test_M1">test_M1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_A" title="extentreport.TestA_1" hash-for-method="test_N3">test_N3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-suite_A -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite_A" class="hide-methods passed suite-suite_A"> (hide)</a> <!-- hide-methods passed suite-suite_A -->
+                      <a href="#" panel-name="suite-suite_A" class="show-methods passed suite-suite_A"> (show)</a> <!-- show-methods passed suite-suite_A -->
+                    </span>
+                    <div class="method-list-content passed suite-suite_A">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_A" title="extentreport.TestA_2" hash-for-method="test_M3">test_M3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_A" title="extentreport.TestA_1" hash-for-method="test_N1">test_N1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite_A -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suite_B">
+              <span class="suite-name border-failed">suite B</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suite_B">
+                    <span>C:\Users\smitasargde\Java\custom reports\Suite_B.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suite_B">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suite_B">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suite_B">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suite_B">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suite_B">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suite_B">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite_B" class="hide-methods failed suite-suite_B"> (hide)</a> <!-- hide-methods failed suite-suite_B -->
+                      <a href="#" panel-name="suite-suite_B" class="show-methods failed suite-suite_B"> (show)</a> <!-- show-methods failed suite-suite_B -->
+                    </span>
+                    <div class="method-list-content failed suite-suite_B">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_B" title="extentreport1.TestB_2" hash-for-method="test_P3">test_P3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_B" title="extentreport1.TestB_1" hash-for-method="test_S2">test_S2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite_B -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-suite_B" class="hide-methods skipped suite-suite_B"> (hide)</a> <!-- hide-methods skipped suite-suite_B -->
+                      <a href="#" panel-name="suite-suite_B" class="show-methods skipped suite-suite_B"> (show)</a> <!-- show-methods skipped suite-suite_B -->
+                    </span>
+                    <div class="method-list-content skipped suite-suite_B">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_B" title="extentreport1.TestB_2" hash-for-method="test_P2">test_P2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_B" title="extentreport1.TestB_1" hash-for-method="test_S1">test_S1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-suite_B -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite_B" class="hide-methods passed suite-suite_B"> (hide)</a> <!-- hide-methods passed suite-suite_B -->
+                      <a href="#" panel-name="suite-suite_B" class="show-methods passed suite-suite_B"> (show)</a> <!-- show-methods passed suite-suite_B -->
+                    </span>
+                    <div class="method-list-content passed suite-suite_B">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite_B" title="extentreport1.TestB_1" hash-for-method="test_S3">test_S3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite_B -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suite_A" class="panel suite_A">
+          <div class="suite-suite_A-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">extentreport.TestA_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_N2">
+                  </a> <!-- test_N2 -->
+                  <span class="method-name">test_N2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at extentreport.TestA_1.test_N2(TestA_1.java:19)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_A-class-failed -->
+          <div class="suite-suite_A-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">extentreport.TestA_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_M2">
+                  </a> <!-- test_M2 -->
+                  <span class="method-name">test_M2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at extentreport.TestA_2.test_M2(TestA_2.java:20)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_A-class-failed -->
+          <div class="suite-suite_A-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">extentreport.TestA_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_N3">
+                  </a> <!-- test_N3 -->
+                  <span class="method-name">test_N3</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped A1
+	at extentreport.TestA_1.test_N3(TestA_1.java:25)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_A-class-skipped -->
+          <div class="suite-suite_A-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">extentreport.TestA_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_M1">
+                  </a> <!-- test_M1 -->
+                  <span class="method-name">test_M1</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped A2
+	at extentreport.TestA_2.test_M1(TestA_2.java:12)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_A-class-skipped -->
+          <div class="suite-suite_A-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">extentreport.TestA_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_N1">
+                  </a> <!-- test_N1 -->
+                  <span class="method-name">test_N1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_A-class-passed -->
+          <div class="suite-suite_A-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">extentreport.TestA_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_M3">
+                  </a> <!-- test_M3 -->
+                  <span class="method-name">test_M3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_A-class-passed -->
+        </div> <!-- panel suite_A -->
+        <div panel-name="suite-suite_B" class="panel suite_B">
+          <div class="suite-suite_B-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">extentreport1.TestB_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_P3">
+                  </a> <!-- test_P3 -->
+                  <span class="method-name">test_P3</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at extentreport1.TestB_2.test_P3(TestB_2.java:21)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_B-class-failed -->
+          <div class="suite-suite_B-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">extentreport1.TestB_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_S2">
+                  </a> <!-- test_S2 -->
+                  <span class="method-name">test_S2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at extentreport1.TestB_1.test_S2(TestB_1.java:20)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_B-class-failed -->
+          <div class="suite-suite_B-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">extentreport1.TestB_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_P2">
+                  </a> <!-- test_P2 -->
+                  <span class="method-name">test_P2</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped P2
+	at extentreport1.TestB_2.test_P2(TestB_2.java:15)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_B-class-skipped -->
+          <div class="suite-suite_B-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">extentreport1.TestB_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_S1">
+                  </a> <!-- test_S1 -->
+                  <span class="method-name">test_S1</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped B1
+	at extentreport1.TestB_1.test_S1(TestB_1.java:12)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_B-class-skipped -->
+          <div class="suite-suite_B-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">extentreport1.TestB_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_S3">
+                  </a> <!-- test_S3 -->
+                  <span class="method-name">test_S3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_B-class-passed -->
+        </div> <!-- panel suite_B -->
+        <div panel-name="suite-extent_report" class="panel extent_report">
+        </div> <!-- panel extent_report -->
+        <div panel-name="test-xml-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\smitasargde\Java\custom reports\Suite_A.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;suite A&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;customReports.customReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;TestA 1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;extentreport.TestA_1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestA 1 --&gt;
+  &lt;test name=&quot;TestA 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;extentreport.TestA_2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestA 2 --&gt;
+&lt;/suite&gt; &lt;!-- suite A --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\smitasargde\Java\custom reports\Suite_B.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;suite B&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;customReports.customReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test B1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;extentreport1.TestB_1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test B1 --&gt;
+  &lt;test name=&quot;Test B2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;extentreport1.TestB_2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test B2 --&gt;
+&lt;/suite&gt; &lt;!-- suite B --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\smitasargde\Java\custom reports\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;extent report&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;customReports.customReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./Suite_A.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./Suite_B.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- extent report --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite A</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestA 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestA 2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite B</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test B1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test B2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for extent report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite A</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite B</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for extent report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite A</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite_A');
+function tableData_suite_A() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_N1')
+data.setCell(0, 2, 'extentreport.TestA_1')
+data.setCell(0, 3, 100);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_N2')
+data.setCell(1, 2, 'extentreport.TestA_1')
+data.setCell(1, 3, 11);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_M2')
+data.setCell(2, 2, 'extentreport.TestA_2')
+data.setCell(2, 3, 10);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_M1')
+data.setCell(3, 2, 'extentreport.TestA_2')
+data.setCell(3, 3, 10);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_N3')
+data.setCell(4, 2, 'extentreport.TestA_1')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_M3')
+data.setCell(5, 2, 'extentreport.TestA_2')
+data.setCell(5, 3, 0);
+window.suiteTableData['suite_A']= { tableData: data, tableDiv: 'times-div-suite_A'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 131 ms</span>
+              <div id="times-div-suite_A">
+              </div> <!-- times-div-suite_A -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite B</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite_B');
+function tableData_suite_B() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_S2')
+data.setCell(0, 2, 'extentreport1.TestB_1')
+data.setCell(0, 3, 10);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_S3')
+data.setCell(1, 2, 'extentreport1.TestB_1')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_S1')
+data.setCell(2, 2, 'extentreport1.TestB_1')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_P3')
+data.setCell(3, 2, 'extentreport1.TestB_2')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_P2')
+data.setCell(4, 2, 'extentreport1.TestB_2')
+data.setCell(4, 3, 0);
+window.suiteTableData['suite_B']= { tableData: data, tableDiv: 'times-div-suite_B'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 ms</span>
+              <div id="times-div-suite_B">
+              </div> <!-- times-div-suite_B -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for extent report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_extent_report');
+function tableData_extent_report() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['extent_report']= { tableData: data, tableDiv: 'times-div-extent_report'}
+return data;
+}
+              </script>
+              <div id="times-div-extent_report">
+              </div> <!-- times-div-extent_report -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite A</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite B</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for extent report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite_A" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">extentreport.TestA_1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_N1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_N2</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_N3</span>
+                <span class="method-start">171 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">extentreport.TestA_2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_M1</span>
+                <span class="method-start">1291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_M2</span>
+                <span class="method-start">1301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_M3</span>
+                <span class="method-start">1321 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite_B" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">extentreport1.TestB_1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_S1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_S2</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_S3</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">extentreport1.TestB_2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_P2</span>
+                <span class="method-start">160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_P3</span>
+                <span class="method-start">160 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-extent_report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

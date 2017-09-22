@@ -1,0 +1,17 @@
+<suite name="suite A">
+
+
+
+<test name="TestA 1">
+<classes>
+<class name="extentreport.TestA_1"/>
+</classes>
+</test>
+
+<test name="TestA 2">
+<classes>
+<class name="extentreport.TestA_2"/>
+</classes>
+</test>
+
+</suite>
